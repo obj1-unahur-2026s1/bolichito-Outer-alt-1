@@ -8,6 +8,38 @@ object pepita {
   }
 }
 
+//Objetos//
+object remera {
+  method color() = rojo
+  method material() = lino
+  method peso() = 0.800
+}
+
+object pelota {
+  method color() = pardo
+  method material() = cuero
+  method peso() = 1.500
+}
+
+object biblioteca{
+  method color() = verde
+  method material() = madera
+  method peso() = 8.000
+}
+
+object muñeco {
+  var property peso = 0.200
+  method color() = celeste
+  method material() = vidrio
+}
+
+object placa {
+  var property peso = 2.000
+  var property color = rojo
+  method material() = cobre
+}
+
+
 //Colores//
 object rojo {
   method esFuerte() = true
@@ -28,21 +60,21 @@ object pardo {
 
 //Materiales//
 object cobre {
-  method esBrillante() = true
+  method Brilla() = true
 }
 
 object vidrio {
-  method esBrillante() = true
+  method Brilla() = true
 }
 
 object lino {
-  method esBrillante() = false
+  method Brilla() = false
 }
 
 object cuero {
-  method esBrillante() = false
+  method Brilla() = false
 }
 
 object madera {
-  method esBrillante() = false
+  method Brilla() = false
 }
