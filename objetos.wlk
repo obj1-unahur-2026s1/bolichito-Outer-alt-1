@@ -1,80 +1,94 @@
-object pepita {
-  var energy = 100
-
-  method energy() = energy
-
-  method fly(minutes) {
-    energy = energy - minutes * 3
-  }
-}
-
 //Objetos//
 object remera {
-  method color() = rojo
-  method material() = lino
-  method peso() = 0.800
+  const property color = rojo
+  const property material = lino
+  const property peso = 0.800
+}
+
+object arito {
+  const property color = celeste
+  const property material = cobre
+  const property peso = 0.180
+}
+
+object banquito {
+  var property color = naranja
+  const property material = madera
+  const property peso = 1.700
+  
+}
+
+object cajita {
+  var property objetosAdentro = pelota 
+  const property color = rojo
+  const property material = cobre
+  method peso() = 0.400 + objetosAdentro.peso()
 }
 
 object pelota {
-  method color() = pardo
-  method material() = cuero
-  method peso() = 1.500
+  const property color = pardo
+  const property material = cuero
+  const property peso = 1.500
 }
 
 object biblioteca{
-  method color() = verde
-  method material() = madera
-  method peso() = 8.000
+  const property color = verde
+  const property material = madera
+  const property peso = 8.000
 }
 
 object muñeco {
   var property peso = 0.200
-  method color() = celeste
-  method material() = vidrio
+  const property color = celeste
+  const property material = vidrio
 }
 
 object placa {
   var property peso = 2.000
   var property color = rojo
-  method material() = cobre
+  const property material = cobre
 }
 
 
 //Colores//
 object rojo {
-  method esFuerte() = true
+  const property esFuerte = true
 }
 
 object verde {
-  method esFuerte() = true
+  const property esFuerte = true
 }
 
 object celeste {
-  method name() = false
+  const property esFuerte = false
 }
 
 object pardo {
-  method esFuerte() = false
+  const property esFuerte = false
+}
+
+object naranja {
+  const property esFuerte = false
 }
 
 
 //Materiales//
 object cobre {
-  method Brilla() = true
+  const property brilla = true
 }
 
 object vidrio {
-  method Brilla() = true
+  const property brilla = true
 }
 
 object lino {
-  method Brilla() = false
+  const property brilla = false
 }
 
 object cuero {
-  method Brilla() = false
+  const property brilla = false
 }
 
 object madera {
-  method Brilla() = false
+  const property brilla = false
 }
