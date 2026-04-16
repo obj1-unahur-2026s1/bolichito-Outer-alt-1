@@ -19,12 +19,12 @@ object luisa{
 /*
 Le gustas las cosas que brillan
 */
-    method leGusta(unObjeto) = unObjeto.material().Brilla()
+    method leGusta(unObjeto) = unObjeto.material().brilla()
 }
 
 object juan{
 /*
 le gustan las cosas que, o bien son de un color que no es fuerte, o bien pesan entre 1200 y 1800 gramos.
 */
-    method leGustan(unObjeto) = (not unObjeto.color().esFuerte()) or (unObjeto.peso() >= 1200 and unObjeto.peso() <= 1800)
+    method leGusta(unObjeto) = (not unObjeto.color().esFuerte()) or (unObjeto.peso() >= 1200 and unObjeto.peso() <= 1800)
 }
