@@ -1,94 +1,98 @@
 //Objetos//
 object remera {
-  const property color = rojo
-  const property material = lino
-  const property peso = 0.800
+  method color() = rojo
+  method material() = lino
+  method peso() = 0.800
 }
 
 object arito {
-  const property color = celeste
-  const property material = cobre
-  const property peso = 0.180
+  method color() = celeste
+  method material() = cobre
+  method peso() = 0.180
 }
 
 object banquito {
-  var property color = naranja
-  const property material = madera
-  const property peso = 1.700
-  
+  var color = naranja
+  method color() = color
+  method material() = madera
+  method peso() = 1.700
 }
 
 object cajita {
-  var property objetosAdentro = pelota 
-  const property color = rojo
-  const property material = cobre
+  var objetosAdentro = pelota
+  method objetosAdentro() = objetosAdentro
+  method color() = rojo
+  method material() = cobre
   method peso() = 0.400 + objetosAdentro.peso()
 }
 
 object pelota {
-  const property color = pardo
-  const property material = cuero
-  const property peso = 1.500
+  method color() = pardo
+  method material() = cuero
+  method peso() = 1.500
 }
 
 object biblioteca{
-  const property color = verde
-  const property material = madera
-  const property peso = 8.000
+  method color() = verde
+  method material() = madera
+  method peso() = 8.000
 }
 
 object muñeco {
-  var property peso = 0.200
-  const property color = celeste
-  const property material = vidrio
+  var peso = 0.200
+  method peso() = peso
+  method color() = celeste
+  method material() = vidrio
 }
 
 object placa {
-  var property peso = 2.000
-  var property color = rojo
-  const property material = cobre
+  var peso = 2.000
+  var color = rojo
+  method peso() = peso
+  method color() = color
+  method material() = cobre
 }
 
 
 //Colores//
 object rojo {
-  const property esFuerte = true
+  method esFuerte() = true
 }
 
 object verde {
-  const property esFuerte = true
+  method esFuerte() = true
 }
 
 object celeste {
-  const property esFuerte = false
+  method esFuerte() = false
 }
 
 object pardo {
-  const property esFuerte = false
+  method esFuerte() = false
 }
 
 object naranja {
-  const property esFuerte = false
+  method esFuerte() = false
 }
 
 
 //Materiales//
 object cobre {
-  const property brilla = true
+  method brilla() = true
 }
 
 object vidrio {
-  const property brilla = true
+  method brilla() = true
 }
 
 object lino {
-  const property brilla = false
+  method brilla() = false
 }
 
 object cuero {
-  const property brilla = false
+  method brilla() = false
 }
 
 object madera {
-  const property brilla = false
+  method brilla() = false
 }

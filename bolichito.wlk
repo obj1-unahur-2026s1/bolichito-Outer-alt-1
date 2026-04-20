@@ -2,8 +2,10 @@ import objetos.*
 import personas.*
 
 object bolichito {
-    var property vidriera = remera
-    var property mostrador = pelota
+    var vidriera = remera
+    var mostrador = pelota
+    method vidriera() = vidriera
+    method mostrador() = mostrador
 
     method esBrillante() {
         return vidriera.material().brilla() and mostrador.material().brilla()
